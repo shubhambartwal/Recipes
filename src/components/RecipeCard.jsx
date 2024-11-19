@@ -19,7 +19,7 @@ const RecipeCard = ({recipe}) => {
      useEffect (()=>{findRecipe(recipe.idMeal)},[recipe.idMeal])
     return (
         <div className='flex flex-col  rounded-md  hover:bg-green-500 overflow-hidden  p-2 relative h-[40vh] hover:ring ring-[#e1e3e4] '>
-            <Link to="#" className=' relative  w-full h-2/3'>
+            <Link to="/recipe" className=' relative  w-full h-2/3'>
                 <img src={recipe.strMealThumb} alt="food image" className='rounded-md w-full h-full  object-cover  cursor-pointer' />
                 <div className='absolute top-1 right-2  bg-white rounded-full p-1 cursor-pointer'
                 onClick={(e)=>e.preventDefault()

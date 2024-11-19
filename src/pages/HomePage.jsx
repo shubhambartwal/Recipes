@@ -18,6 +18,7 @@ const HomePage = () => {
       setLoading(false)
     }
   }
+  const [favourites,setFavourites]=useState([])
   useEffect(() => { fetchRecipes("chicken") }, [])
   return (
     <div className='bg-slate-300 p-10 flex-1 min-h-screen'>
@@ -31,7 +32,7 @@ const HomePage = () => {
         <p className='font-bold text-3xl md:text-5xl mt-5 text-black'>Recommended Recipes</p>
         <p className='text-slate-500 font-semibold ml-1 my-2  text-sm  tracking-tight'>Popular choices</p>
         <div className='grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-          {!loading && recipes.map((recipe,index) => <RecipeCard  key={index} recipe={recipe} />)}
+          {!loading && recipes.map((recipe,index) => <RecipeCard  key={index} recipe={recipe}  />)}
           {loading && [...Array(9)].map((_, index) => (
             <div key={index }className='flex flex-col  rounded-md  gap-3  p-2  '>
               <div className='skeleton relative  w-full h-[30vh]'></div>
