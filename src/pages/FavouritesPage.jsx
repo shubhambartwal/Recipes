@@ -4,7 +4,6 @@ import RecipeCard from '../components/RecipeCard'
 import { useSelector } from 'react-redux'
 const FavouritePage = () => {
   const fav = useSelector((state) => state.favourite.favourites);
-  console.log(fav)
   const [favRecipes, setFavRecipes] = useState([])
   const [loading, setLoading] = useState(true)
   const getFavRecipes = async () => {
@@ -24,9 +23,7 @@ const FavouritePage = () => {
       setLoading(false);
     }
   }
-  useEffect(() => {getFavRecipes()
-  console.log(fav)}, [fav])
-   console.log(favRecipes)
+  useEffect(() => {getFavRecipes()}, [fav])
   return (
     <div className='bg-slate-300 p-10 flex-1 min-h-screen'>
       <div className='max-w-screen-lg mx-auto'>
