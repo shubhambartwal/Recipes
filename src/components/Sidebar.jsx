@@ -17,7 +17,6 @@ const DesktopSidebar = () => {
       <div className='flex flex-col gap-20 sticky top-10 left-0'>
         <div className='w-full'>
           <img src="https://placehold.it/150x150?text=Logo" alt="sdf" className='hidden md:block' />
-          <img src="https://placehold.it/150x150?text=Logo" alt="sdf" className='hidden md:block' />
 
         </div>
         <ul className=' flex flex-col items-center md:items-start gap-8'>
