@@ -1,6 +1,6 @@
 # Recipe Application
 
--Live Link - https://recipes-red-eight.vercel.app/
+Live Link - https://recipes-red-eight.vercel.app/
 
 Welcome to the **Recipe Application**! This web app allows you to search for recipes by ingredients, view detailed information about each recipe, and save your favorite recipes.
 
