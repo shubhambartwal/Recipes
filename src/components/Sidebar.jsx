@@ -1,6 +1,7 @@
 import { Heart, Home } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../utilities/logo.jpeg'
 const Sidebar = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const DesktopSidebar = () => {
     <div className="p-3 md:p-10  border-r  min-h-screen w-24 md:w-64 hidden sm:block">
       <div className='flex flex-col gap-20 sticky top-10 left-0'>
         <div className='w-full'>
-          <img src="https://placehold.it/150x150?text=Logo" alt="sdf" className='hidden md:block' />
+          <img src={logo} alt="sdf" className='hidden md:block' />
 
         </div>
         <ul className=' flex flex-col items-center md:items-start gap-8'>
